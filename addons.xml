@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addons>
+<addon id="plugin.video.FranceTVPluzz"
+       name="FranceTV Pluzz"
+       version="1.1.4"
+       provider-name="JUL1EN094">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+    <import addon="script.module.simplejson"/>
+    <import addon="script.module.requests"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource"
+            library="default.py">
+        <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <summary>FranceTV Pluzz</summary>
+    <summary lang="fr">FranceTV Pluzz</summary>
+    <description>FranceTV Pluzz : Catchup TV and live from mobile catalog</description>
+    <description lang="fr">Plugin donnant accès aux vidéos de rattrapage et aux directs de l'application mobile FranceTV Pluzz</description>
+  </extension>
+</addon>
+
+<addon id="plugin.video.freplay"
+       name="FReplay"
+       version="0.6.6"
+       provider-name="SPM, JUL1EN094, sy6sy2">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+    <import addon="script.module.beautifulsoup4" version="4.3.2"/>
+    <import addon="script.module.parsedom" version="0.9.1"/>
+    <import addon="script.module.requests" version="1.1.0"/>
+    <import addon="script.module.simplejson"/>
+    <import addon="script.module.youtube.dl" version="16.327.0"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+    <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <summary lang="en">Addon giving access to catchups tvshows for french channels</summary>
+    <summary lang="fr">Plugin vidéo donnant acces aux replays de differentes chaines FR</summary>
+    <description lang="en">This addon gives access to french catchups TV Channels<BR/>
+    Favourites show all shows by folder, or all videos. You can then filter to only show unwatched shows.
+    </description>
+    <description lang="fr">Ce plugin permet d'acceder aux replay TV de differentes chaines francophones. <BR/>
+    Les favoris affichent les emissions par repertoire ou toutes les videos. Vous pouvez ensuite filtrer les videos non visualisees.
+    </description>
+    <email>kodi.freplay@gmail.com</email>
+    <forum>http://media-passion.fr/add-ons-video/freplay-french-replay/</forum>
+    <language>fr</language>
+    <license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
+    <source>https://github.com/spmjc/plugin.video.freplay</source>
+    <disclaimer></disclaimer>
+    <website></website>
+  </extension>
+</addon>
+
+<addon id="plugin.video.vstream" name="vStream" version="0.5.0" provider-name="Venom,TmpName">
+  <requires>
+	<import addon="xbmc.python" version="2.1.0"/>
+	<import addon="script.common.plugin.cache" version="0.9.1"/>
+	<import addon="script.module.parsedom" version="0.9.1"/>
+	<import addon="plugin.video.youtube" version="2.9.2"/>
+	<import addon="script.module.simplejson" version="2.0.10"/>
+	<import addon="script.module.urlresolver" optional="true"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+    <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="fr">vStream</summary>
+    <description lang="fr">vStream est un module de streaming français, trouvez tous vos films, séries et mangas.[CR][CR]Contributeur: Johngf, Kodigoal, Chataigne73, Gregwar, Mino60</description>
+    <summary lang="en">vStream</summary>
+    <description lang="en">vStream module and a french streaming, find all your movies, TV shows and mangas.[CR][CR]Contributeur: Johngf, Kodigoal, Chataigne73, Gregwar, Mino60</description>
+    <platform>all</platform>
+  </extension>
+</addon>
+
+<addon id="service.vpn.manager"
+       name="VPN Manager for OpenVPN"
+       version="2.6.2"
+       provider-name="Zomboided">
+  <requires>
+    <import addon="xbmc.python" version="2.7.0"/>
+  </requires>
+  <extension point="xbmc.service" library="service.py" start="startup"/>
+  <extension point="xbmc.python.pluginsource" library="addon.py">
+    <provides>executable</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <summary lang="en">Configure and manage VPN connections using openVPN</summary>
+    <description lang="en">Establish a connection to a VPN provider and automatically switch VPN locations based on the add-on being used.  Also supports automatic reconnect and connection at boot time.  And with some simple configuring (see README and remote.xml file in add-on directory), you can cycle through VPN connections using a remote button.</description>
+  </extension>
+</addon>
+</addons>
