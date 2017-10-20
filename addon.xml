@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="repository.pchevallier" version="2.0.0" name="Pchevallier repository" provider-name="Pchevallier">
+	<extension point="xbmc.addon.repository" name="Pchevallier repository">
+		<dir>
+		</dir>
+		<info compressed="false">https://kodi.chevallier.net/addons.xml</info>
+		<checksum>https://kodi.chevallier.net/addons.xml.md5</checksum>
+		<datadir zip="true">https://kodi.chevallier.net/</datadir>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">Pchevallier repository Summary</summary>
+		<description lang="en">Pchevallier repository Description</description>
+		<platform>all</platform>
+	</extension>
+</addon>
+
